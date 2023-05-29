@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    android:padding="10dp">
+    <TextView
+        android:id="@+id/txt_customtable_TenKhachHang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/txt_customtable_diachi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:layout_below="@+id/txt_customtable_TenKhachHang"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/txt_customtable_sdt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:layout_below="@+id/txt_customtable_diachi"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/img_customtable_KhachHang"
+        android:layout_width="140dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/txt_customtable_sdt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorPrimary"
+        android:src="@drawable/ic_baseline_event_seat_40" />
+
+
+    <ImageView
+        android:id="@+id/img_customtable_MuaHang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_customtable_KhachHang"
+        android:layout_marginLeft="6dp"
+        android:background="@drawable/bogoc"
+        android:padding="5dp"
+        android:src="@drawable/ic_baseline_shopping_bag_24"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/img_customtable_ThanhToan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_customtable_KhachHang"
+        android:layout_marginLeft="12dp"
+        android:layout_toRightOf="@id/img_customtable_MuaHang"
+        android:background="@drawable/bogoc"
+        android:padding="5dp"
+        android:src="@drawable/ic_baseline_payments_24"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/img_customtable_AnNut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_customtable_KhachHang"
+        android:layout_marginLeft="12dp"
+        android:layout_toRightOf="@id/img_customtable_ThanhToan"
+        android:background="@drawable/bogoc"
+        android:padding="5dp"
+        android:src="@drawable/ic_baseline_backspace_24"
+        android:visibility="visible"
+
+        />
+
+</RelativeLayout>

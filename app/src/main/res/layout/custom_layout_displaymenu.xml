@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="15sp">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/img_custommenu_HinhHang"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/goi"
+                android:scaleType="fitXY"
+                />
+            <TextView
+                android:id="@+id/txt_custommenu_TinhTrang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="Còn hàng"
+                android:textSize="12dp"
+                android:fontFamily="@font/baloo2_semibold"
+                android:textColor="@color/black"
+                android:layout_gravity="top|right"
+                android:layout_margin="5dp"
+                />
+        </FrameLayout>
+        <TextView
+            android:id="@+id/txt_custommenu_TenHang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:fontFamily="@font/baloo2_semibold"
+            android:text="Ruột gối Everon"
+            android:layout_gravity="bottom"
+            android:textSize="22dp"
+            android:padding="5dp"/>
+
+        <RelativeLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_custommenu_HinhHang"
+            android:background="@color/colorPrimary"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            >
+            <TextView
+                android:id="@+id/txt_custommenu_GiaTien"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/baloo2_semibold"
+                android:padding="3dp"
+                android:paddingBottom="10dp"
+                android:text="100000 VND"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

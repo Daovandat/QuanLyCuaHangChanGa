@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".Activity.WelcomeActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Chăn ga gối đệm ECOVERY"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="25dp"
+        android:fontFamily="@font/baloo2_semibold"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/ic_store" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/baloo2_semibold"
+        android:text="CỬA HÀNG"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="32sp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/baloo2_semibold"
+        android:text="DT SHOP"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="32sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp">
+
+        <android.widget.Button
+            android:id="@+id/btn_login"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bogoc"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:onClick="callLoginFromWel"
+            android:text="Đăng nhập"
+            android:fontFamily="@font/baloo2_semibold"
+            android:textColor="@color/white"
+            android:transitionName="transition_login"
+            tools:ignore="OnClick" />
+
+        <android.widget.Button
+            android:id="@+id/btn_signup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bogoc"
+            android:fontFamily="@font/baloo2_semibold"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:onClick="callSignUpFromWel"
+            android:text="Đăng ký"
+
+            android:textColor="@color/white"
+            android:transitionName="transition_signup"
+            tools:ignore="OnClick" />
+
+    </LinearLayout>
+
+    <Button
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:text="Đổi mật khẩu"
+        android:textColor="@color/black"
+        android:fontFamily="@font/baloo2_semibold"
+        android:textStyle="bold"
+        app:backgroundTint="@color/white" />
+
+</LinearLayout>
